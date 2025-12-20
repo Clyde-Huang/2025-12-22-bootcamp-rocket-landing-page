@@ -1,0 +1,27 @@
+/* 顏色 */
+:root{
+    --primary-blue-100:#E5EBFF;
+    --primary-blue-200:#BFC9F0;
+    --primary-blue-300:#A6B6F1;
+    --primary-blue-400:#7F94E2;
+
+    --primary-viloet-100:#F5F1FF;
+    --primary-viloet-200:#EEE5FF;
+    --primary-viloet-300:#CAB2F1;
+    --primary-viloet-400:#B28FEA;
+
+    --accent-yellow:#FFEEA3;
+    --accent-orange:#FFD887;
+
+    --neutral-0:#FFFFFF;
+    --neutral-100:#F8F9FD;
+    --neutral-200:#F0F0F0;
+    --neutral-300:#E0E0E0;
+    --neutral-400:#CDCDCD;
+    --neutral-500:#9A9A9A;
+    --neutral-600:#757575;
+    --neutral-700:#363636;
+
+
+
+}
