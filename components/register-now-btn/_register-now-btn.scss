@@ -1,8 +1,18 @@
 .register-now-btn-box {
     @include flex-center;
+    @include margin-auto;
+    gap: 20px;
+    background-color: #E5EBFF;
+    max-width: 1076px;
+    height: 96px;
+    border: 2px solid black;
+    border-radius: 16px;
+
 }
 
-.register-now-btn-icon {
-    @include button-reset;
-    @include hide-desktop-show-rwd;
+@media (max-width: 428px) {
+    .register-now-btn-box {
+        height: 80px;
+        width: 332px;
+    }
 }
