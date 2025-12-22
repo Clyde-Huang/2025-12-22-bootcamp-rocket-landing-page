@@ -1,0 +1,8 @@
+.register-now-btn-box {
+    @include flex-center;
+}
+
+.register-now-btn-icon {
+    @include button-reset;
+    @include hide-desktop-show-rwd;
+}
