@@ -1,9 +1,10 @@
 // Flexbox 排版
-@mixin flex-center {
+@mixin flex-center($spacing) {
     //row
     display: flex;
     align-items: center;
     justify-content: center;
+    gap:$spacing;
 }
 
 @mixin flex-center-col {
@@ -52,11 +53,15 @@
 }
 
 // 圓角系統
-@mixin radius($size: md) {
+@mixin box-outline($radius-size: md, $border-width: 2px, $border-color: $neutral) {
+    // 1. 邊框邏輯
+    border: $border-width solid $border-color;
+
+    // 2. 圓角邏輯 (直接從 Map 取得數值)
     border-radius: map-get((sm: $radius-sm,
                 md: $radius-md,
                 lg: $radius-lg,
-                ex-lg: $radius-ex-lg ), $size);
+                ex-lg :$radius-ex-lg ), $radius-size);
 }
 
 // hover 動畫 (還需對照figma修改)
@@ -190,4 +195,9 @@
     @include tablet {
         display: block;
     }
+}
+
+//icon cursor
+@mixin cursor-pointer {
+    cursor: pointer
 }
