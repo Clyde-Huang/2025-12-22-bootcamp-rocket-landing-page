@@ -176,4 +176,90 @@ h4 {
     width: 332px;
     height: 80px;
   }
+}
+
+.about-card {
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  max-width: 636px;
+  padding: 36px;
+}
+.about-card .card-body {
+  display: flex;
+  justify-content: space-between;
+}
+.about-card .card-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-card .card-text-wrapper .card-title {
+  margin-bottom: 12px;
+}
+.about-card .badge-group {
+  display: flex;
+  gap: 12px;
+}
+.about-card .badge-group .badge {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+.about-card .badge-group .badge-outline {
+  color: #7F94E2;
+  border: 2px solid #A6B6F1;
+  border-radius: 999px;
+}
+.about-card .badge-group .body-3 {
+  font-weight: 700;
+}
+.about-card .body-1 {
+  color: #9A9A9A;
+}
+.about-card .img-wrapper {
+  display: block;
+  width: 169px;
+  height: 208px;
+  border-radius: 24px;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.about-card .img-wrapper img {
+  margin-left: -51px;
+  height: 160px;
+}
+@media (max-width: 428px) {
+  .about-card {
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .about-card .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-card .card-text-wrapper .card-title {
+    margin-bottom: 8px;
+  }
+  .about-card .badge-group {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .about-card .img-wrapper {
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 136px;
+    border-radius: 12px;
+  }
+  .about-card .img-wrapper img {
+    margin-top: -116px;
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=main.css.map */
