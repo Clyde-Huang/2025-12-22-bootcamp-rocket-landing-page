@@ -1,0 +1,36 @@
+.field-description-box {
+    //figma上無此框，但因製作組件需要加上此框
+    @include flex-center($spacing-5xl);
+    @include margin-auto;
+
+    //以下RWD
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.field-description-pic {
+    //figma上圖片與邊框是分離的，但圖片自帶邊框效果，因此這裡不需要再額外加邊框
+    width: 526px;
+    height: 388px;
+    background-image: url('/assets/place-intro/intro-rest-lg-3x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.field-description-text-area {
+    @include flex-center-col ($spacing-l);
+    width: 494px;
+    height: auto;
+    order: -1;
+
+    //以下RWD
+    @include tablet {
+        order: 0;
+    }
+}
+
+.field-description-text-title,
+.field-description-text-content {
+    align-self: start;
+}
