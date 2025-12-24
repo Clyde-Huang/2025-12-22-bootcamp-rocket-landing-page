@@ -2,7 +2,8 @@
   .detail-card {
     font-family: $font-main;
     color: $neutral-700;
-    background: $neutral-0 url("../assets/training/training-bg.png");
+    background-color: $neutral-0;
+    background-image: url("../assets/training/training-bg.png");
     border-radius: $spacing-m;
     border: 2px solid $neutral-200;
     padding: 0px $spacing-9xl $spacing-5xl $spacing-6xl;
