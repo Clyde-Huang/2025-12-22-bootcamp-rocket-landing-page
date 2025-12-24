@@ -1,18 +1,26 @@
 // Flexbox 排版
-@mixin flex-center($spacing) {
+@mixin flex-center($spacing: null) {
     //row
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:$spacing;
+
+    // 只有當有傳入參數時，才編譯出 gap
+    @if $spacing {
+        gap: $spacing;
+    }
 }
 
-@mixin flex-center-col {
+@mixin flex-center-col($spacing: null) {
     //col
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @if $spacing {
+        gap: $spacing;
+    }
 }
 
 @mixin flex-between {
