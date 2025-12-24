@@ -8,14 +8,14 @@
     align-items: center;
     justify-content: center;
     gap: $spacing-8xl;
-    padding: 127px 18px 182px;
+    padding: 127px 70px 182px;
 }
 .rocket-card{
     display: flex;
     position: relative;
     box-sizing: border-box;
     height: 448px;
-    width: 100%;
+    width: 440px;
     border-radius: $radius-lg ;
     border: 1px solid $neutral-200; 
     box-shadow: 0 8px 24px $primary-blue-200;
@@ -31,7 +31,7 @@
     position: relative;
     box-sizing: border-box;
     height: 448px;
-    width: 100%;
+    width: 440px;
     border-radius: $radius-lg ;
     border: 1px solid $neutral-200; 
     box-shadow: 0 8px 24px $primary-blue-200;
