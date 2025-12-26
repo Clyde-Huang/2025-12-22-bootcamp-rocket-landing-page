@@ -1,4 +1,4 @@
-.detail-card-wrapper {
+.detail-card-list {
   .detail-card {
     font-family: $font-main;
     color: $neutral-700;
@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     gap: $spacing-4xl;
-    flex: 1 1 auto;
     min-width: 0;
   }
   .card-content h4 {
@@ -60,6 +59,7 @@
 
   @media (max-width: 768px) {
     .detail-card {
+      border-radius: 0;
       padding: 0px $spacing-6xl $spacing-3xl $spacing-6xl;
     }
     .card-body {
