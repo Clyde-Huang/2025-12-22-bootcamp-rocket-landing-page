@@ -1,5 +1,35 @@
 .about-training {
   font-family: $font-main;
+  background-color: $neutral-100;
+  hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new-batch {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: $spacing-s $spacing-l;
+    border-radius: 50px;
+    background-color: $neutral-0;
+    box-shadow: 0 2px 4px #e8e8e8;
+    margin-top: $spacing-s;
+    margin-bottom: $spacing-6xl;
+    .new-batch-title {
+      font-weight: 700;
+      width: fit-content;
+      padding: 5px 12px 5px 0;
+      margin-right: $spacing-s;
+      border-right: 2px solid $neutral-200;
+      white-space: nowrap;
+    }
+    .new-batch-text-wrapper {
+      font-weight: 500;
+      padding: 5px 0;
+    }
+  }
+
   .detail-card-list {
     display: flex;
     flex-direction: column;
@@ -46,7 +76,7 @@
     }
     .coach-experience {
       list-style-position: inside;
-      padding-left: 16px;
+      padding-left: $spacing-m;
       a {
         color: $neutral-700;
       }
@@ -76,7 +106,7 @@
   .default-message {
     text-align: center;
     color: #999;
-    padding: 80px 20px;
+    padding: $spacing-9xl $spacing-l;
     font-size: 18px;
   }
 
