@@ -1,15 +1,23 @@
-main {
-  padding-top: 64px;
+.index {
+  main {
+    padding-top: 64px;
 
-  .rocket-banner {
-    margin-top: 0;
-    position: relative;
-    z-index: 1;
-  }
+    .rocket-banner {
+      margin-top: 0;
+      position: relative;
+      z-index: 1;
+    }
 
-  .about-rocket {
-    margin-top: -$spacing-s;
-    position: relative;
-    z-index: 2;
+    .about-rocket {
+      margin-top: -$spacing-s;
+      position: relative;
+      z-index: 2;
+    }
+
+    .about-training {
+      hgroup h2 {
+        margin-top: -28px;
+      }
+    }
   }
 }
