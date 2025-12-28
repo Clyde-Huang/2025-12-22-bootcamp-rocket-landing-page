@@ -19,5 +19,11 @@
         margin-top: -28px;
       }
     }
+
+    .training-box {
+      @include mobile {
+          padding-bottom: 76px;
+      }
+    }
   }
 }
