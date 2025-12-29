@@ -371,7 +371,6 @@ body {
 @media (max-width: 768px) {
   .field-description-container {
     flex-direction: column;
-    padding: 0 48px;
     gap: 40px;
   }
 }
@@ -583,79 +582,6 @@ body {
   .service-card-wrapper .card-text .body-3 {
     font-size: 16px;
     margin-bottom: 8px;
-  }
-}
-
-.successful-case-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  height: 694px;
-  padding: 92px 48px;
-}
-
-.successful-case-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 28px;
-  width: 100%;
-  max-width: 1296px;
-  height: 510px;
-  justify-content: space-between;
-}
-
-.successful-case-box-title {
-  width: 100%;
-  text-align: center;
-}
-
-.successful-case-box-4pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-.successful-case-box-4pic img {
-  width: 306px;
-  flex: 0 0 306px;
-  height: auto;
-}
-@media (max-width: 1024px) {
-  .successful-case-box-4pic img {
-    width: 240px;
-    flex: 0 0 240px;
-    height: auto;
-  }
-}
-
-.successful-case-box-scroll {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 28px;
-  width: 100%;
-}
-@media (max-width: 1024px) {
-  .successful-case-box-scroll {
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 24px;
-    align-items: flex-start;
-  }
-  .successful-case-box-scroll::-webkit-scrollbar {
-    height: 8px;
-  }
-  .successful-case-box-scroll::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  .successful-case-box-scroll::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
   }
 }
 
@@ -960,6 +886,163 @@ body {
   }
   .about-card-scroll-list .card-body {
     gap: 0px;
+  }
+}
+
+.field-and-service-container {
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .field-and-service-container {
+    padding: 48px;
+  }
+}
+.field-and-service-container h2 {
+  text-align: center;
+}
+
+.service-card-grid {
+  width: 100%;
+  max-width: 1076px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 48px;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  place-items: center;
+}
+@media (max-width: 768px) {
+  .service-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 28px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    place-items: center;
+  }
+}
+
+.service-card-component {
+  width: 100%;
+  max-width: 1076px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 76px 0 80px 0;
+}
+@media (max-width: 768px) {
+  .service-card-component {
+    padding: 48px 0 40px 0;
+    gap: 28px;
+  }
+}
+
+.field-component {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  gap: 28px;
+  width: 100%;
+  max-width: 1076px;
+}
+
+.field-component h4,
+.service-card-component h4 {
+  width: 74px;
+  height: 42px;
+  line-height: normal;
+  background-image: linear-gradient(transparent 50%, #FFD887 50%);
+}
+@media (max-width: 428px) {
+  .field-component h4,
+  .service-card-component h4 {
+    width: 53px;
+    height: 30px;
+  }
+}
+
+.detail-card-list .detail-card {
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+  color: #363636;
+  background-color: #FFFFFF;
+  background-image: url("../assets/training/training-bg.png");
+  border-radius: 16px;
+  border: 2px solid #F0F0F0;
+  padding: 0px 80px 40px 48px;
+  margin-top: 32px;
+  list-style: none;
+}
+.detail-card-list ul {
+  list-style: none;
+}
+.detail-card-list ol {
+  list-style-position: inside;
+}
+.detail-card-list .mark-style {
+  font-weight: 700;
+  background-image: linear-gradient(transparent 50%, #ffeea3 50%);
+}
+.detail-card-list .card-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 48px;
+}
+.detail-card-list .detail-card-title {
+  margin-top: -32px;
+  margin-bottom: 28px;
+  width: 100%;
+}
+.detail-card-list .detail-card-title h3 {
+  padding: 12px 40px;
+  border: 2px solid #363636;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #363636;
+  background-color: #FFFFFF;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.detail-card-list .card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  min-width: 0;
+}
+.detail-card-list .card-content h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 1px;
+  border-bottom: 3px solid #363636;
+  margin-bottom: 16px;
+}
+.detail-card-list .img-wrapper {
+  align-self: center;
+  flex: 0 0 auto;
+}
+@media (max-width: 768px) {
+  .detail-card-list .detail-card {
+    border-radius: 0;
+    padding: 0px 48px 32px 48px;
+  }
+  .detail-card-list .card-body {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+  }
+  .detail-card-list .detail-card-title {
+    order: 1;
+    margin-bottom: 24px;
+  }
+  .detail-card-list .img-wrapper {
+    order: 2;
+  }
+  .detail-card-list .card-content-wrapper {
+    order: 3;
   }
 }
 
@@ -1480,5 +1563,191 @@ body {
   .pricing-cta {
     margin-top: 24px;
     height: 56px;
+  }
+}
+.about-training {
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+  background-color: #F8F9FD;
+}
+.about-training hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-training .new-batch {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px #e8e8e8;
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+.about-training .new-batch .new-batch-title {
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 12px 5px 0;
+  margin-right: 12px;
+  border-right: 2px solid #F0F0F0;
+  white-space: nowrap;
+}
+.about-training .new-batch .new-batch-text-wrapper {
+  font-weight: 500;
+  padding: 5px 0;
+}
+.about-training .detail-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+.about-training .detail-card:nth-child(even) .card-body {
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .about-training .detail-card:nth-child(even) .card-body {
+    flex-direction: column;
+  }
+}
+.about-training .coaches {
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .about-training .coaches {
+    margin-bottom: 32px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+.about-training .coaches h3 {
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .about-training .coaches h3 {
+    margin-bottom: 28px;
+  }
+}
+.about-training .coach-info-card-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 28px;
+}
+.about-training .coach-profile-desktop .coach-name,
+.about-training .coach-profile-mobile .coach-name {
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .about-training .coach-profile-desktop .coach-name,
+  .about-training .coach-profile-mobile .coach-name {
+    margin-bottom: 8px;
+  }
+}
+.about-training .coach-profile-desktop .coach-experience,
+.about-training .coach-profile-mobile .coach-experience {
+  list-style-position: inside;
+  padding-left: 16px;
+}
+.about-training .coach-profile-desktop .coach-experience a,
+.about-training .coach-profile-mobile .coach-experience a {
+  color: #363636;
+}
+.about-training input[type=radio] {
+  display: none;
+}
+.about-training .coach-info-card {
+  cursor: pointer;
+  display: block;
+}
+.about-training .coach-profile-desktop .coach-data {
+  display: none;
+}
+.about-training #coach-weijie:checked ~ .coaches .coach-profile-desktop #data-weijie,
+.about-training #coach-yinmin:checked ~ .coaches .coach-profile-desktop #data-yinmin,
+.about-training #coach-justin:checked ~ .coaches .coach-profile-desktop #data-justin,
+.about-training #coach-casper:checked ~ .coaches .coach-profile-desktop #data-casper {
+  display: block;
+}
+.about-training .default-message {
+  text-align: center;
+  color: #999;
+  padding: 80px 20px;
+  font-size: 18px;
+}
+.about-training input[type=radio]:checked ~ .coaches .coach-profile-desktop .default-message {
+  display: none;
+}
+.about-training .mobile-slider {
+  display: none;
+}
+@media (max-width: 768px) {
+  .about-training .coach-info-card-list,
+  .about-training .coach-profile-desktop {
+    display: none;
+  }
+  .about-training .mobile-slider {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    list-style: none;
+    padding-top: 24px;
+  }
+  .about-training .mobile-slider::-webkit-scrollbar {
+    display: none;
+  }
+  .about-training .mobile-slider .coach-info-card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-training .mobile-slider .coach-info-card {
+    flex-shrink: 0;
+    width: calc(100vw - 98px);
+    max-width: none;
+    scroll-snap-align: start;
+    margin-bottom: 28px;
+  }
+  .about-training .mobile-slider .coach-experience {
+    list-style-type: disc;
+    list-style-position: inside;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+}
+.about-training .button-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #E5EBFF;
+  border: 2px solid #363636;
+  border-radius: 16px;
+}
+.about-training .button-wrapper:hover .button-icon {
+  display: block;
+  opacity: 1;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+.about-training .button-go {
+  width: 100%;
+  color: #363636;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-training .button-icon {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .about-training .button-icon {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
