@@ -137,10 +137,10 @@
 @media (max-width: 428px) {
   .rocket-banner {
     flex-direction: column;
-    gap: 12px;
+    gap: 48px;
     padding: 40px 16px 80px;
     min-height: 0;
-    overflow-x: hidden;
+    overflow: visible;
   }
 
   .rocket-divider {
@@ -156,10 +156,19 @@
     display: none;
   }
 
+  .rocket-card-max{
+    width: 100%;
+    max-width: 332px;
+    margin: 0;
+    align-items: center;
+    box-sizing: border-box;
+    display: visible;
+  }
+
   .rocket-card-wrap,
   .coworking-card-wrap {
     width: 100%;
-    max-width: 332px;
+    max-width: 294px;
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
@@ -176,8 +185,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 12px;
-    box-shadow: 7px 7px 0 0 $primary-blue-200;
   }
 
   .coworking-card {
@@ -191,8 +198,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 12px;
-    box-shadow: 7px 7px 0 0 $primary-violet-200;
   }
 
   .rocket-card-header {
@@ -205,7 +210,6 @@
   .rocket-card-title {
     margin: 0;
     font-size: $fs-m-h1;
-    line-height: 1.2;
     text-align: left;
     position: relative;
     padding-left: 56px;
@@ -225,24 +229,38 @@
   .rocket-card-logo {
   position: absolute;
   left: 24px;
-  top: 33%;
+  top: 36%;
   transform: translateY(-50%);
   width: 48px;
   height: 48px;
   margin: 0;
-  border: 2px solid $neutral-200;
   border-radius: 50%;
   display: grid;
   place-items: center;
 }
 
   .rocket-card-logo img {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   display: block;
 }
 
-  .rocket-badge-mb,
+  .rocket-badge-mb {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $neutral-0;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: visible;
+  }
+
   .coworking-badge-mb {
     display: flex;
     position: absolute;
@@ -259,27 +277,31 @@
     overflow: visible;
   }
 
-  .rocket-badge-mb::after,
-  .coworking-badge-mb::after {
-    content: "";
+  .rocket-badge-mb-bg {
     position: absolute;
     top: 50%;
     left: 70%;
-    transform: translate(-50%,-50%);
-    right: -40px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
     pointer-events: none;
-    clip-path: inset(0 0 0 50%);
-  }
-
-  .rocket-badge-mb::after {
+    clip-path: inset(0 0 0 49%);
     background: $primary-blue-200;
   }
-
-  .coworking-badge-mb::after {
+  
+  .coworking-badge-mb-bg {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    clip-path: inset(0 0 0 49%);
     background: $primary-violet-200;
   }
 
