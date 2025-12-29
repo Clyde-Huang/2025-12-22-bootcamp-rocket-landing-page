@@ -394,6 +394,7 @@ body {
   .field-description-box {
     flex-direction: column;
     gap: 16px;
+    width: 100%;
   }
   .field-description-box:nth-of-type(even) .field-description-text-area {
     order: 1;
