@@ -894,8 +894,12 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  height: 694px;
-  padding: 92px 0;
+  padding: 92px 72px 120px;
+}
+@media (max-width: 1439px) {
+  .successful-case-container {
+    padding: 48px 48px 92px;
+  }
 }
 
 .successful-case-box {
@@ -908,6 +912,11 @@ body {
   max-width: 1296px;
   height: 510px;
   justify-content: space-between;
+}
+@media (max-width: 1439px) {
+  .successful-case-box {
+    height: 406px;
+  }
 }
 
 .successful-case-box-title {
@@ -962,7 +971,6 @@ body {
 @media (max-width: 1024px) {
   .successful-case-box-scroll {
     align-items: flex-start;
-    padding: 92px 48px;
   }
 }
 
@@ -1100,6 +1108,11 @@ body {
 .training-fee-content-text a {
   color: inherit;
   font-family: inherit;
+}
+
+.training-fee-content-text span {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .carousel-container {
