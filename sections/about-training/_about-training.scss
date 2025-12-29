@@ -3,9 +3,9 @@
   background-color: $neutral-100;
 
   .container {
-  max-width: 1296px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1296px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   hgroup {
@@ -14,7 +14,6 @@
     align-items: center;
   }
   .new-batch {
-    width: fit-content;
     display: flex;
     align-items: center;
     padding: $spacing-s $spacing-l;
@@ -31,9 +30,58 @@
       border-right: 2px solid $neutral-200;
       white-space: nowrap;
     }
-    .new-batch-text-wrapper {
+    .new-batch-ticker {
       font-weight: 500;
       padding: 5px 0;
+      display: flex;
+      max-width: 507px;
+      overflow-x: hidden;
+    }
+    .new-batch-ticker-text {
+      white-space: nowrap;
+      span {
+        display: inline-block;
+      }
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-m-body4;
+      
+      .new-batch-ticker {
+        max-width: 332px;
+      }
+      .new-batch-ticker {
+        max-width: 211px;
+      }
+      .new-batch-ticker-text {
+        span {
+          display: none;
+        }
+      }
+      @keyframes marquee-ticker-first {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-150%);
+        }
+      }
+      @keyframes marquee-ticker-second {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-250%);
+        }
+      }
+      .new-batch-ticker-text:first-child {
+        animation: marquee-ticker-first 20s linear infinite;
+      }
+      .new-batch-ticker-text:nth-child(2) {
+        display: block;
+        animation: marquee-ticker-second 20s linear infinite;
+        animation-delay: 10s;
+        margin-left: 16px;
+      }
     }
   }
 
@@ -98,7 +146,7 @@
     display: block;
 
     &:focus-within {
-    background-color: $primary-blue-100;
+      background-color: $primary-blue-100;
     }
 
     img {
@@ -125,7 +173,10 @@
     font-size: 18px;
   }
 
-  input[type="radio"]:checked ~ .coaches .coach-profile-desktop .default-message {
+  input[type="radio"]:checked
+    ~ .coaches
+    .coach-profile-desktop
+    .default-message {
     display: none;
   }
 
