@@ -3,7 +3,7 @@
   border-radius: $radius-ex-lg;
 
   .container {
-    max-width: 1296px;
+    max-width: 1076px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -75,7 +75,7 @@
 
   @media (max-width: 996px) {
     gap: $spacing-xl;
-    scroll-snap-type: none;
+    // scroll-snap-type: none;
     height: 100%;
     .card-body {
       gap: 0px;
