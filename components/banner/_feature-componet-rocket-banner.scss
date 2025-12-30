@@ -5,9 +5,8 @@
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: center;
-  gap: $spacing-8xl;
-  padding: 92px 0 22px;
+  justify-content: space-between;
+  padding: 92px 0 122px;
 }
 
 .rocket-card-wrap,
@@ -24,7 +23,7 @@
   align-items: center;
   padding: 0;
   background: $neutral-0;
-  border: 1px solid $neutral-200;
+  border: 2px solid $neutral-200;
   border-radius: $radius-lg;
   box-shadow: none;
   position: relative;
