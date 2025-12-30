@@ -1383,7 +1383,6 @@ body {
 }
 
 .location-section {
-  padding: 80px 0;
   display: flex;
   justify-content: center;
 }
@@ -1451,9 +1450,6 @@ body {
 }
 
 @media (max-width: 1439px) {
-  .location-section {
-    padding: 24px 0;
-  }
   .location-card {
     width: calc(100% - 32px);
     height: auto;

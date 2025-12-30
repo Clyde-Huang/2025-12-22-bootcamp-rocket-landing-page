@@ -1,5 +1,4 @@
 .location-section {
-  padding: $spacing-9xl 0;
   display: flex;
   justify-content: center;
 }
@@ -65,9 +64,6 @@
 }
 
 @media (max-width: 1439px) {
-  .location-section {
-    padding: $spacing-xl 0;
-  }
 
   .location-card {
     width: calc(100% - 32px);
