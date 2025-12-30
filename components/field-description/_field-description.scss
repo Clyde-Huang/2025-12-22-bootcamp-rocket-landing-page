@@ -71,7 +71,7 @@
     background-image: url('/assets/place-intro/intro-rest-lg-3x.png');
 
     @include notebook {
-        background-image: url('/assets/place-intro/intro-rest-sm-3x.png ');
+        background-image: url('/assets/place-intro/intro-rest-sm-3x.png');
     }
 }
 
@@ -79,7 +79,7 @@
     background-image: url('/assets/place-intro/intro-discuss-lg-3x.png');
 
     @include notebook {
-        background-image: url('/assets/place-intro/intro-discuss-sm-3x.png ');
+        background-image: url('/assets/place-intro/intro-discuss-sm-3x.png');
     }
 }
 
@@ -88,6 +88,6 @@
 
     @include notebook {
         //完全按照雲端檔名，並非拼錯字
-        background-image: url('/assets/place-intro/intro-worksapce-sm-3x.png ');
+        background-image: url('/assets/place-intro/intro-worksapce-sm-3x.png');
     }
 }
