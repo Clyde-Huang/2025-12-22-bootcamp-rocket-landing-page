@@ -177,8 +177,14 @@ body {
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 92px 0 122px;
+  gap: 64px;
+}
+@media (max-width: 1439px) {
+  .rocket-banner {
+    gap: 36px;
+  }
 }
 
 .rocket-card-wrap,
