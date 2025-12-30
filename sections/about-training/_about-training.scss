@@ -183,10 +183,10 @@
   }
 
   // 根據選中狀態顯示對應教練資料
-  #coach-weijie:checked~.coaches .coach-profile-desktop #data-weijie,
-  #coach-yinmin:checked~.coaches .coach-profile-desktop #data-yinmin,
-  #coach-justin:checked~.coaches .coach-profile-desktop #data-justin,
-  #coach-casper:checked~.coaches .coach-profile-desktop #data-casper {
+  #coach-weijie:checked ~ .coaches .coach-profile-desktop #data-weijie,
+  #coach-yinmin:checked ~ .coaches .coach-profile-desktop #data-yinmin,
+  #coach-justin:checked ~ .coaches .coach-profile-desktop #data-justin,
+  #coach-casper:checked ~ .coaches .coach-profile-desktop #data-casper {
     display: block;
   }
 
@@ -197,7 +197,7 @@
     font-size: 18px;
   }
 
-  input[type="radio"]:checked~.coaches .coach-profile-desktop .default-message {
+  input[type="radio"]:checked ~ .coaches .coach-profile-desktop .default-message {
     display: none;
   }
 
