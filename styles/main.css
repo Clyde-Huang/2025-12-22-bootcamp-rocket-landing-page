@@ -140,295 +140,6 @@ body {
   color: #363636;
 }
 
-.rocket-banner {
-  margin-top: 64px;
-  background-image: url(../assets/banner/banner-bg.png);
-  min-height: 757px;
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  gap: 64px;
-  padding: 127px 70px 182px;
-}
-
-.rocket-card {
-  display: flex;
-  position: relative;
-  box-sizing: border-box;
-  height: 448px;
-  width: 440px;
-  border-radius: 24px;
-  border: 1px solid #F0F0F0;
-  box-shadow: 0 8px 24px #BFC9F0;
-  background-color: #FFFFFF;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 0 24px 0;
-}
-
-.coworking-card {
-  display: flex;
-  position: relative;
-  box-sizing: border-box;
-  height: 448px;
-  width: 440px;
-  border-radius: 24px;
-  border: 1px solid #F0F0F0;
-  box-shadow: 0 8px 24px #BFC9F0;
-  background-color: #FFFFFF;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 0 24px 0;
-}
-
-.rocket-card-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -40px;
-}
-
-.rocket-card-title {
-  align-items: center;
-  font-size: 48px;
-  font-weight: 700;
-  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
-}
-
-.rocket-card-subtitle {
-  margin: 4px 0 0;
-  font-size: 24px;
-  color: #9A9A9A;
-  text-align: center;
-  margin-bottom: 16px;
-  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
-}
-
-.rocket-card-content {
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  margin: 0;
-  line-height: 175%;
-  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
-}
-
-.rocket-divider {
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1;
-  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
-}
-
-.rocket-card-logo {
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
-  border: 2px solid #F0F0F0;
-  display: grid;
-  place-items: center;
-  margin-bottom: 24px;
-}
-
-.rocket-card-logo img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
-}
-
-.rocket-badge {
-  position: absolute;
-  left: 50%;
-  bottom: -50px;
-  width: 120px;
-  height: 120px;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 20px 0 #BFC9F0;
-  background-image: radial-gradient(circle at center bottom, #BFC9F0 50%, transparent 60%);
-}
-
-.rocket-badge-icon {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.rocket-badge-icon-mb {
-  display: none;
-}
-
-.coworking-badge {
-  position: absolute;
-  left: 50%;
-  bottom: -50px;
-  width: 120px;
-  height: 120px;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 20px 0 #EEE5FF;
-  background-image: radial-gradient(circle at center bottom, #EEE5FF 50%, transparent 60%);
-}
-
-.coworking-badge-icon {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.coworking-badge-icon-mb {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .rocket-divider {
-    display: none;
-  }
-  .rocket-card-content {
-    display: none;
-  }
-  .rocket-badge {
-    display: none;
-  }
-  .coworking-badge {
-    display: none;
-  }
-  .rocket-banner {
-    flex-direction: column;
-    gap: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .rocket-card {
-    width: 100%;
-    max-width: 300px;
-    min-width: 300px;
-    height: 84px;
-    padding: 14px 56px 14px 56px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    position: relative;
-  }
-  .coworking-card {
-    width: 100%;
-    max-width: 300px;
-    min-width: 300px;
-    height: 84px;
-    padding: 14px 56px 14px 56px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    position: relative;
-  }
-  .rocket-card-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    min-width: 0;
-    flex: 1;
-  }
-  .rocket-card-logo {
-    order: 0;
-  }
-  .rocket-card-header {
-    order: 1;
-  }
-  .rocket-card-logo {
-    position: absolute;
-    left: 10%;
-    top: 34%;
-    transform: translateY(-50%);
-    width: 45px;
-    height: 45px;
-    flex: 0 0 auto;
-  }
-  .rocket-card-logo img {
-    width: 32px;
-    height: 32px;
-    display: block;
-  }
-  .rocket-card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    min-width: 0;
-    margin: 0;
-  }
-  .rocket-card-title {
-    padding-left: 30px;
-    font-size: 32px;
-    margin: 0;
-    text-align: center;
-    max-width: 100%;
-  }
-  .rocket-card-subtitle {
-    font-size: 20px;
-    margin: 0;
-    color: #9A9A9A;
-    width: 200px;
-  }
-  .rocket-badge-mb {
-    position: absolute;
-    top: 50%;
-    right: -18px;
-    left: auto;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 20px 0 0 #BFC9F0;
-  }
-  .coworking-badge-mb {
-    position: absolute;
-    top: 50%;
-    right: -18px;
-    left: auto;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 20px 0 0 #EEE5FF;
-  }
-  .rocket-badge-icon-mb,
-  .coworking-badge-icon-mb {
-    transform: translateX(10px);
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  .rocket-badge-icon,
-  .coworking-badge-icon {
-    display: none;
-  }
-}
 .register-now-btn-box:hover .register-now-btn-icon {
   display: block;
 }
@@ -459,6 +170,314 @@ body {
   }
 }
 
+.rocket-banner {
+  background-image: url(../assets/banner/banner-bg.png);
+  min-height: 757px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  padding: 92px 0 122px;
+}
+
+.rocket-card-wrap,
+.coworking-card-wrap {
+  position: relative;
+}
+
+.rocket-card,
+.coworking-card {
+  width: 440px;
+  height: 448px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 24px;
+  box-shadow: none;
+  position: relative;
+}
+
+.rocket-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.rocket-card-title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+  text-align: center;
+}
+
+.rocket-card-subtitle {
+  margin: 4px 0 16px;
+  font-size: 24px;
+  color: #9A9A9A;
+  text-align: center;
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+}
+
+.rocket-card-logo {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 24px;
+}
+
+.rocket-card-logo img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.rocket-card-content {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 175%;
+  text-align: center;
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+}
+
+.rocket-divider {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+}
+
+.rocket-badge,
+.coworking-badge {
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+.rocket-badge::before,
+.coworking-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  clip-path: inset(50% 0 0 0);
+  transform: translateY(10px);
+}
+
+.rocket-badge::before {
+  background: #BFC9F0;
+}
+
+.coworking-badge::before {
+  background: #EEE5FF;
+}
+
+.rocket-badge-icon,
+.coworking-badge-icon {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.rocket-badge-mb,
+.coworking-badge-mb {
+  display: none;
+}
+
+.rocket-card-link,
+.coworking-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 1023px) {
+  .rocket-banner {
+    flex-direction: column;
+    gap: 48px;
+    padding: 124px 48px 88px;
+    min-height: 0;
+    overflow: visible;
+  }
+  .rocket-divider {
+    display: none;
+  }
+  .rocket-card-content {
+    display: none;
+  }
+  .rocket-badge,
+  .coworking-badge {
+    display: none;
+  }
+  .rocket-card-max {
+    width: 100%;
+    max-width: 294px;
+    margin: 0;
+    align-items: center;
+    display: visible;
+  }
+  .rocket-card-wrap,
+  .coworking-card-wrap {
+    width: 100%;
+    max-width: 332px;
+    margin: 0 48px;
+    position: relative;
+    padding: 0 12px;
+  }
+  .rocket-card {
+    width: 100%;
+    height: 132px;
+    padding: 24px;
+    border-radius: 16px;
+    border: 2px solid #E0E0E0;
+    background: #FFFFFF;
+    box-shadow: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .coworking-card {
+    width: 100%;
+    height: 132px;
+    padding: 24px;
+    border-radius: 16px;
+    border: 2px solid #E0E0E0;
+    background: #FFFFFF;
+    box-shadow: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .rocket-card-header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rocket-card-title {
+    margin: 0;
+    font-size: 32px;
+    text-align: left;
+    position: relative;
+    padding-left: 56px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .rocket-card-subtitle {
+    margin: 4px 0 0;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    color: #9A9A9A;
+  }
+  .rocket-card-logo {
+    position: absolute;
+    left: 24px;
+    top: 36%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  .rocket-card-logo img {
+    width: 48px;
+    height: 48px;
+    display: block;
+  }
+  .rocket-badge-mb {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(70%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: visible;
+  }
+  .coworking-badge-mb {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(70%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: visible;
+  }
+  .rocket-badge-mb-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+    z-index: -1;
+    pointer-events: none;
+    clip-path: inset(0 0 0 49%);
+    background: #BFC9F0;
+  }
+  .coworking-badge-mb-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+    z-index: -1;
+    pointer-events: none;
+    clip-path: inset(0 0 0 49%);
+    background: #EEE5FF;
+  }
+  .rocket-badge-icon-mb,
+  .coworking-badge-icon-mb {
+    display: block;
+    width: 60px;
+    height: 60px;
+    transform: translateX(6px);
+  }
+  .rocket-badge-icon,
+  .coworking-badge-icon {
+    display: none;
+  }
+}
 .coach-info-card {
   background-color: #FFFFFF;
   width: 100%;
@@ -668,7 +687,6 @@ body {
 @media (max-width: 768px) {
   .field-description-container {
     flex-direction: column;
-    padding: 0 48px;
     gap: 40px;
   }
 }
@@ -1283,6 +1301,82 @@ body {
   }
 }
 
+.field-and-service-container {
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .field-and-service-container {
+    padding: 48px;
+  }
+}
+.field-and-service-container h2 {
+  text-align: center;
+}
+
+.service-card-grid {
+  width: 100%;
+  max-width: 1076px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 48px;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  place-items: center;
+}
+@media (max-width: 768px) {
+  .service-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 28px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    place-items: center;
+  }
+}
+
+.service-card-component {
+  width: 100%;
+  max-width: 1076px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 76px 0 80px 0;
+}
+@media (max-width: 768px) {
+  .service-card-component {
+    padding: 48px 0 40px 0;
+    gap: 28px;
+  }
+}
+
+.field-component {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  gap: 28px;
+  width: 100%;
+  max-width: 1076px;
+}
+
+.field-component h4,
+.service-card-component h4 {
+  width: 74px;
+  height: 42px;
+  line-height: normal;
+  background-image: linear-gradient(transparent 50%, #FFD887 50%);
+}
+@media (max-width: 428px) {
+  .field-component h4,
+  .service-card-component h4 {
+    width: 53px;
+    height: 30px;
+  }
+}
+
 .location-section {
   padding: 80px 0;
   display: flex;
@@ -1637,9 +1731,6 @@ body {
   }
 }
 
-.index main {
-  padding-top: 64px;
-}
 .index main .rocket-banner {
   margin-top: 0;
   position: relative;
@@ -1656,5 +1747,236 @@ body {
 @media (max-width: 428px) {
   .index main .training-box {
     padding-bottom: 76px;
+  }
+}
+
+.pricing-section {
+  background: #EEE5FF;
+  padding: 80px 24px;
+}
+
+.pricing-head {
+  position: relative;
+  padding-top: 72px;
+}
+
+.promo-svg {
+  line-height: 150%;
+  vertical-align: text-top;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  min-height: 69px;
+  padding: 16px 16px;
+  margin: 0 0 24px;
+  background: url("/assets/promotion/promotion-lg.svg") no-repeat center/contain;
+  color: #363636;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.pricing-title {
+  margin: 0 0 12px;
+}
+
+.pricing-desc {
+  margin: 0 0 40px;
+  color: #363636;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.pricing-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 2px solid #363636;
+  padding: 36px 36px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card.light {
+  border-color: transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06) inset;
+}
+
+.card-title {
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.card-price {
+  background: #F0F0F0;
+  border-radius: 12px;
+  padding: 28px 24px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.amount {
+  font-family: "Josefin Sans", "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.card-list li {
+  position: relative;
+  padding-left: 28px;
+  color: #363636;
+}
+
+.card-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid #363636;
+  background: #FFFFFF;
+}
+
+.card-list li::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid #363636;
+  border-bottom: 2px solid #363636;
+  transform: rotate(-45deg);
+}
+
+.card-list .muted {
+  color: #757575;
+}
+
+.card-list .muted::before,
+.card-list .muted::after {
+  opacity: 0.5;
+}
+
+.pricing-cta {
+  margin-top: 32px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #363636;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #363636;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 56px 16px;
+  }
+  .pricing-head {
+    padding-top: 60px;
+    margin-bottom: 24px;
+  }
+  .promo-svg {
+    line-height: 150%;
+    vertical-align: text-top;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: none;
+    position: absolute;
+    top: -10px;
+    left: 70px;
+    min-height: 69px;
+    padding: 16px 16px 12px 16px;
+    margin: 0 0 24px;
+    background-image: url("/assets/promotion/promotion-lg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #363636;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+  }
+  .pricing-desc {
+    margin-bottom: 24px;
+  }
+  .pricing-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 0 16px;
+    margin: 0;
+    scrollbar-width: none;
+  }
+  .pricing-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .pricing-card {
+    flex: 0 0 calc(100vw - 32px);
+    scroll-snap-align: start;
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+  .card-title {
+    margin-bottom: 16px;
+  }
+  .card-price {
+    padding: 16px 12px;
+    margin-bottom: 16px;
+  }
+  .amount {
+    font-size: 24px;
+  }
+  .card-list {
+    gap: 12px;
+  }
+  .card-list li {
+    padding-left: 22px;
+  }
+  .card-list li::before {
+    width: 14px;
+    height: 14px;
+    top: 2px;
+  }
+  .card-list li::after {
+    left: 3px;
+    top: 5px;
+    width: 8px;
+    height: 5px;
+  }
+  .pricing-cta {
+    margin-top: 24px;
+    height: 56px;
   }
 }/*# sourceMappingURL=main.css.map */
