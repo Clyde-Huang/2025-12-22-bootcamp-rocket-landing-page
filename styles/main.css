@@ -2049,7 +2049,7 @@ body {
   top: 0;
   left: 40px;
   min-height: 69px;
-  padding: 16px 16px;
+  padding: 20px 16px;
   margin: 0 0 24px;
   background: url("/assets/promotion/promotion-lg.svg") no-repeat center/contain;
   color: #363636;
@@ -2190,9 +2190,14 @@ body {
     margin-bottom: 24px;
   }
   .promo-svg {
+    max-width: 331px;
+    width: 100%;
     top: -10px;
     left: 0px;
     background-image: url("/assets/promotion/promotion-lg.svg");
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
   }
   .pricing-grid {
     display: flex;
